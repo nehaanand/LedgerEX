@@ -94,13 +94,11 @@
                         android:id="@+id/underlineView1"
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:layout_alignEnd="@+id/etherbal"
                         android:layout_alignLeft="@+id/etherbal"
-                        android:layout_alignRight="@+id/etherbal"
                         android:layout_alignStart="@+id/etherbal"
                         android:layout_below="@+id/etherbal"
-                        android:layout_marginLeft="100dp"
-                        android:layout_marginRight="18dp"
+                        android:layout_marginLeft="155dp"
+                        android:layout_marginRight="20dp"
                         android:layout_marginTop="5dp"
                         android:background="#999999"></View>
                 </LinearLayout>
