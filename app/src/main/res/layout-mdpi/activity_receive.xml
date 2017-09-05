@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    tools:context="task.darwinlabs.Receive">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivback"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:src="@drawable/backicon"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="10dp"
+                android:text="RECEIVE"
+                android:textColor="#6b6b6b"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="#c6c6c6"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvetheriumqrcode"
+            android:text="YOUR ETHERIUM QR CODE"/>
+        <View
+            android:id="@+id/squareview"
+            android:layout_width="220dp"
+            android:layout_marginTop="30dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:background="@drawable/qrcodeshape"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="#c6c6c6"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tvetheriumaddress"
+            android:text="YOUR ETHERIUM ADDRESS"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ethaddress"
+            android:fontFamily="Times New Roman"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:paddingLeft="8dp"
+
+            android:text="0X3635774825368dd25"
+            android:textColor="#4e4e4e"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:textSize="18dp"
+            android:textColorHint="#333333" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivcopytoclip"
+                android:src="@drawable/copyicon"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

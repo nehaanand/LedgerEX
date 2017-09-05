@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="task.darwinlabs.HomePage"
+    tools:showIn="@layout/app_bar_home_page">
+
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="match_parent"
+        android:verticalScrollbarPosition="left"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@drawable/homepagecustomscrollbar"
+        >
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/relativelay"
+
+            android:layout_height="100dp">
+
+            <RelativeLayout
+                android:id="@+id/frstrl"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/btcll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tvbtc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="BTC"
+                        android:textColor="#d6d6d6"
+                        android:textSize="14dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbbtc"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:maxHeight="4dp"
+                        android:minHeight="4dp"
+
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvbtc"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/frstll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/etherbal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_marginTop="3dp"
+                        android:textColor="#d6d6d6"
+                        android:paddingLeft="80dp"
+                        android:textSize="13dp" />
+
+                    <View
+                        android:id="@+id/underlineView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignEnd="@+id/etherbal"
+                        android:layout_alignLeft="@+id/etherbal"
+                        android:layout_alignRight="@+id/etherbal"
+                        android:layout_alignStart="@+id/etherbal"
+                        android:layout_below="@+id/etherbal"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#999999"></View>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/etcll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btcll"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvetc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ETC"
+                        android:textColor="#d6d6d6"
+                        android:textSize="14dp" />
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="42dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pb"
+                        android:layout_marginLeft="10dp"
+                        android:maxHeight="4dp"
+                        android:layout_marginTop="5dp"
+                        android:minHeight="4dp"
+                        android:id="@+id/pbetc"
+                        android:layout_toRightOf="@+id/tvetc"
+                        android:paddingTop="4dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ltcll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etcll"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvltc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="LTC"
+                        android:textColor="#d6d6d6"
+                        android:textSize="14dp" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pb"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tvetc"
+                        android:maxHeight="4dp"
+                        android:minHeight="4dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingTop="4dp"
+                        android:id="@+id/pbltc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/scmll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ltcll"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvscm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SCM"
+                        android:textColor="#d6d6d6"
+                        android:textSize="14dp" />
+
+                    <ProgressBar
+                        android:id="@+id/pbscm"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pb"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvscm"
+                        android:maxHeight="5dp"
+                        android:minHeight="5dp"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dshll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/scmll"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvdsh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DSH"
+                        android:textColor="#d6d6d6"
+                        android:textSize="14dp"/>
+                    <ProgressBar
+                        android:id="@+id/pbdsh"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="14dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pb"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvdsh"
+                        android:maxHeight="5dp"
+                        android:minHeight="5dp"
+                        android:paddingTop="4dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/frstll"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:textColor="#3D6B99"
+                    android:paddingTop="20dp"
+                    android:textSize="28dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tvvalue"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:text="$5976.47"
+                    android:textColor="#4e4e4e"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llconvll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/frstrl"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvconversion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1 ETH = "
+                    android:textColor="#d6d6d6"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/tvconversionval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#4e4e4e"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dayll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/llconvll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DAY "
+                    android:textColor="#d6d6d6"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/redarrow24" />
+
+                <TextView
+                    android:id="@+id/tvdayval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.98%"
+                    android:textColor="#B33636"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weekll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/dayll"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvweek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="WEEK "
+                    android:layout_marginTop="3dp"
+                    android:textColor="#d6d6d6"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/greenarrow24" />
+
+                <TextView
+                    android:id="@+id/tvweekval"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2.65%"
+                    android:layout_marginTop="3dp"
+                    android:textColor="#2F9A41"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llicons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weekll"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivsend"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/sendicon" />
+
+                    <TextView
+                        android:id="@+id/textViewNombreVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ivsend"
+                        android:layout_alignStart="@+id/ivsend"
+                        android:layout_below="@+id/ivsend"
+                        android:scrollHorizontally="false"
+                        android:text="SEND"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15dp"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#949494"
+                        android:textColorLink="@android:color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivreceive"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/receiveicon" />
+
+                    <TextView
+                        android:id="@+id/tvreceive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ivreceive"
+                        android:layout_alignStart="@+id/ivreceive"
+                        android:layout_below="@+id/ivreceive"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:scrollHorizontally="false"
+                        android:text="RECEIVE"
+                        android:textSize="15dp"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#949494"
+                        android:textColorLink="@android:color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivbuysell"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transfericon" />
+
+                    <TextView
+                        android:id="@+id/tvbuysell"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/ivbuysell"
+                        android:layout_alignStart="@+id/ivbuysell"
+                        android:layout_below="@+id/ivbuysell"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:scrollHorizontally="false"
+                        android:text="BUY/SELL"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#949494"
+                        android:textColorLink="@android:color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/shadow"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/llicons"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/shadow" />
+            <LinearLayout
+                android:id="@+id/lltransachist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shadow"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvtransachist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="TRANSACTION HISTORY"
+                    android:textAlignment="gravity"
+                    android:textColor="#a2a2a2" />
+
+                <View
+                    android:id="@+id/underlineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignEnd="@+id/tvtransachist"
+                    android:layout_alignLeft="@+id/tvtransachist"
+                    android:layout_alignRight="@+id/tvtransachist"
+                    android:layout_alignStart="@+id/tvtransachist"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#999999"></View>
+
+            </LinearLayout>
+
+
+            <task.darwinlabs.NonScrollListView
+                android:id="@+id/lvtransachist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lltransachist"
+                android:cacheColorHint="#00000000"
+                android:choiceMode="singleChoice"
+                android:divider="#b5b5b5"
+                android:dividerHeight="1dp"
+                android:listSelector="#00000000" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

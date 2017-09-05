@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="task.darwinlabs.EnterPin">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivback"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:src="@drawable/backicon" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="ENTER PIN"
+                android:textColor="#6b6b6b"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/frstll"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etdigit1"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/enterpinedittext"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@drawable/colorcursor"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etdigit2"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@drawable/colorcursor"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etdigit3"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext1"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@drawable/colorcursor1"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etdigit4"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext1"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@drawable/colorcursor1"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/frstll"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shadow" />
+
+    <task.darwinlabs.EnterPinKeyboardView
+        android:id="@+id/kv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shadow"
+        android:layout_marginTop="10dp"></task.darwinlabs.EnterPinKeyboardView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/kv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/forwardchevron" />
+
+
+</RelativeLayout>
