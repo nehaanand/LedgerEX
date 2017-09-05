@@ -57,15 +57,11 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
         $(R.id.t9_key_dot).setOnClickListener(this);
     }
 
-
-
     @Override
     public void onClick(View v) {
         // handle number button click
         pinval1 = (EditText)findViewById(R.id.etdigit1);
         if (v.getTag() != null && "number_button".equals(v.getTag()) ) {
-
-//            pinval1.setText("4");
 
             if(pinval1.getText().toString().equals("") && textcount==0)
             {
@@ -87,7 +83,6 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
                 pinval4.setText(((TextView) v).getText());
                 textcount=textcount+1;
             }
-            //pinval1.append(((TextView) v).getText());
             return;
         }
 
@@ -111,7 +106,6 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
                 else  if(pinval4.getText().toString().equals("") && textcount==3)
                 {
                     pinval4.setText(((TextView) v).getText());
-                //    textcount=textcount+1;
                 }
             }
             break;
