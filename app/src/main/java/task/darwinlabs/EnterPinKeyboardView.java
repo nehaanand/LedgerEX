@@ -60,25 +60,29 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
         $(R.id.t9_key_dot).setOnClickListener(this);
     }
 
+
+
     @Override
     public void onClick(View v) {
         // handle number button click
         if (v.getTag() != null && "number_button".equals(v.getTag())) {
-            pinval1.append(((TextView) v).getText());
+//            pinval1.append(((TextView) v).getText());
             return;
         }
 
         switch (v.getId()) {
             case R.id.t9_key_dot: {
+
+                
             }
             break;
             case R.id.t9_key_backspace: { // handle backspace button
 //                 delete one character
-                Editable editable = pinval1.getText();
-                int charCount = editable.length();
-                if (charCount > 0) {
-                    editable.delete(charCount - 1, charCount);
-                }
+//                Editable editable = pinval1.getText();
+//                int charCount = editable.length();
+//                if (charCount > 0) {
+//                    editable.delete(charCount - 1, charCount);
+//                }
             }
             break;
         }
