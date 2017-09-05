@@ -2,14 +2,11 @@ package task.darwinlabs;
 
 import android.content.Context;
 import android.support.annotation.IdRes;
-import android.text.Editable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 /**
  * Created by SS0088 on 9/2/2017.
@@ -36,7 +33,7 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
     }
 
     private void init() {
-        inflate(getContext(), R.layout.keyboard, this);
+        inflate(getContext(), R.layout.enterpinactivityskeyboard, this);
         initViews();
     }
 
@@ -65,24 +62,82 @@ public class EnterPinKeyboardView extends FrameLayout implements View.OnClickLis
     @Override
     public void onClick(View v) {
         // handle number button click
-        if (v.getTag() != null && "number_button".equals(v.getTag())) {
-//            pinval1.append(((TextView) v).getText());
+        pinval1 = (EditText)findViewById(R.id.etdigit1);
+        if (v.getTag() != null && "number_button".equals(v.getTag()) ) {
+
+//            pinval1.setText("4");
+
+            if(pinval1.getText().toString().equals("") && textcount==0)
+            {
+                pinval1.setText(((TextView) v).getText());
+                textcount=textcount+1;
+            }
+            else  if(pinval2.getText().toString().equals("") && textcount==1)
+            {
+                pinval2.setText(((TextView) v).getText());
+                textcount=textcount+1;
+            }
+            else  if(pinval3.getText().toString().equals("") && textcount==2)
+            {
+                pinval3.setText(((TextView) v).getText());
+                textcount=textcount+1;
+            }
+            else  if(pinval4.getText().toString().equals("") && textcount==3)
+            {
+                pinval4.setText(((TextView) v).getText());
+                textcount=textcount+1;
+            }
+            //pinval1.append(((TextView) v).getText());
             return;
         }
 
         switch (v.getId()) {
             case R.id.t9_key_dot: {
-
-                
+                if(pinval1.getText().toString().equals("") && textcount==0)
+                {
+                    pinval1.setText(((TextView) v).getText());
+                    textcount=textcount+1;
+                }
+                else  if(pinval2.getText().toString().equals("") && textcount==1)
+                {
+                    pinval2.setText(((TextView) v).getText());
+                    textcount=textcount+1;
+                }
+                else  if(pinval3.getText().toString().equals("") && textcount==2)
+                {
+                    pinval3.setText(((TextView) v).getText());
+                    textcount=textcount+1;
+                }
+                else  if(pinval4.getText().toString().equals("") && textcount==3)
+                {
+                    pinval4.setText(((TextView) v).getText());
+                //    textcount=textcount+1;
+                }
             }
             break;
             case R.id.t9_key_backspace: { // handle backspace button
 //                 delete one character
-//                Editable editable = pinval1.getText();
-//                int charCount = editable.length();
-//                if (charCount > 0) {
-//                    editable.delete(charCount - 1, charCount);
-//                }
+               if(!pinval4.getText().toString().equals("") && textcount==4)
+               {
+                   pinval4.setText("");
+                   textcount=textcount-1;
+               }
+               else if(!pinval3.getText().toString().equals("") && textcount==3)
+                {
+                    pinval3.setText("");
+                    textcount=textcount-1;
+                }
+              else if(!pinval2.getText().toString().equals("") && textcount==2)
+                {
+                    pinval2.setText("");
+                    textcount=textcount-1;
+                }
+              else if(!pinval1.getText().toString().equals("") && textcount==1)
+                {
+                    pinval1.setText("");
+                    textcount=textcount-1;
+                }
+
             }
             break;
         }

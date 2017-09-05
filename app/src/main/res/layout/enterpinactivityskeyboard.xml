@@ -1,9 +1,9 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    android:paddingBottom="20dp">
+    android:paddingBottom="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--<EditText-->
     <!--android:id="@+id/password_field"-->
@@ -19,8 +19,79 @@
     <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
 
 
+    <LinearLayout
+        android:id="@+id/frstll"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
 
+        <EditText
+            android:id="@+id/etdigit1"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/enterpinedittext"
+            android:cursorVisible="false"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textSize="30sp" />
 
+        <EditText
+            android:id="@+id/etdigit2"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext"
+            android:cursorVisible="false"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etdigit3"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext1"
+            android:cursorVisible="false"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/etdigit4"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/enterpinedittext1"
+            android:cursorVisible="false"
+            android:gravity="center_vertical|center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:padding="5dp"
+            android:textColorHint="#ffffff"
+
+            android:textSize="30sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/frstll"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/shadow" />
 
     <TableLayout
         android:id="@+id/keyboard"

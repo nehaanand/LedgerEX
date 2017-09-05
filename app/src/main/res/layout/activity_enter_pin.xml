@@ -42,88 +42,82 @@
         </LinearLayout>
     </android.support.v7.widget.Toolbar>
 
-    <LinearLayout
-        android:id="@+id/frstll"
-        android:layout_width="fill_parent"
-        android:layout_height="70dp"
-        android:layout_below="@+id/toolbar"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/frstll"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:orientation="horizontal">-->
 
-        <EditText
-            android:id="@+id/etdigit1"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:layout_margin="10dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/enterpinedittext"
-            android:gravity="center_vertical|center"
-            android:inputType="number"
-            android:maxLength="1"
-            android:padding="5dp"
-            android:textColorHint="#ffffff"
-            android:cursorVisible="false"
-            android:textSize="30sp" />
+        <!--<EditText-->
+            <!--android:id="@+id/etdigit1"-->
+            <!--android:layout_width="47dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/enterpinedittext"-->
+            <!--android:gravity="center_vertical|center"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:cursorVisible="false"-->
+            <!--android:textSize="30sp" />-->
 
-        <EditText
-            android:id="@+id/etdigit2"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/enterpinedittext"
-            android:gravity="center_vertical|center"
-            android:inputType="number"
-            android:maxLength="1"
-            android:padding="5dp"
-            android:textColorHint="#ffffff"
-            android:cursorVisible="false"
-            android:textSize="30sp" />
+        <!--<EditText-->
+            <!--android:id="@+id/etdigit2"-->
+            <!--android:layout_width="47dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/enterpinedittext"-->
+            <!--android:gravity="center_vertical|center"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:cursorVisible="false"-->
+            <!--android:textSize="30sp" />-->
 
-        <EditText
-            android:id="@+id/etdigit3"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/enterpinedittext1"
-            android:gravity="center_vertical|center"
-            android:inputType="number"
-            android:maxLength="1"
-            android:padding="5dp"
-            android:textColorHint="#ffffff"
-            android:cursorVisible="false"
-            android:textSize="30sp" />
+        <!--<EditText-->
+            <!--android:id="@+id/etdigit3"-->
+            <!--android:layout_width="47dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/enterpinedittext1"-->
+            <!--android:gravity="center_vertical|center"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:cursorVisible="false"-->
+            <!--android:textSize="30sp" />-->
 
-        <EditText
-            android:id="@+id/etdigit4"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/enterpinedittext1"
-            android:gravity="center_vertical|center"
-            android:inputType="number"
-            android:maxLength="1"
-            android:padding="5dp"
-            android:textColorHint="#ffffff"
-            android:cursorVisible="false"
+        <!--<EditText-->
+            <!--android:id="@+id/etdigit4"-->
+            <!--android:layout_width="47dp"-->
+            <!--android:layout_height="47dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/enterpinedittext1"-->
+            <!--android:gravity="center_vertical|center"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="#ffffff"-->
+            <!--android:cursorVisible="false"-->
 
-            android:textSize="30sp" />
-    </LinearLayout>
+            <!--android:textSize="30sp" />-->
+    <!--</LinearLayout>-->
 
-    <View
-        android:id="@+id/shadow"
-        android:layout_width="fill_parent"
-        android:layout_height="20dp"
-        android:layout_below="@+id/frstll"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/shadow" />
+
 
     <task.darwinlabs.EnterPinKeyboardView
         android:id="@+id/kv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/shadow"
-        android:layout_marginTop="10dp"></task.darwinlabs.EnterPinKeyboardView>
+        android:layout_marginTop="40dp"></task.darwinlabs.EnterPinKeyboardView>
 
 
     <ImageView
